@@ -109,7 +109,7 @@ position이 안 잡혀있으면 z-index가 안 됨! 그래서 position이 잡혀
 }
 .more {
 	display : block;
-	background : url(../images/more.png) no-repeat;
+	background : url(./images/more.png) no-repeat;
 	background-size : 20px;
 	width : 20px;
 	height : 20px;
@@ -249,7 +249,7 @@ position이 안 잡혀있으면 z-index가 안 됨! 그래서 position이 잡혀
 	float : left;
 	width : 500px;
 	height : 250px;
-	background : url(../images/exploreBanner.png) no-repeat center / cover;
+	background : url(./images/exploreBanner.png) no-repeat center / cover;
 }
 .exploreBanner a {
 	font-family : "Kadwa-Regular";
@@ -363,7 +363,7 @@ position이 안 잡혀있으면 z-index가 안 됨! 그래서 position이 잡혀
 .adBanner {
 	clear : both;
 	height : 120px;
-	background : url(../images/adBanner.png) no-repeat center / cover;
+	background : url(./images/adBanner.png) no-repeat center / cover;
 	cursor : pointer;
 	position: relative;
 }
@@ -627,7 +627,7 @@ position이 안 잡혀있으면 z-index가 안 됨! 그래서 position이 잡혀
 		display : block;
 		width : 80px;
 		height : 30px;
-		background : url(../images/shopmoreM.png) no-repeat center;
+		background : url(./images/shopmoreM.png) no-repeat center;
 		background-size : 70px;
 		white-space : nowrap;
 		text-indent : -9999px;
@@ -645,7 +645,7 @@ position이 안 잡혀있으면 z-index가 안 됨! 그래서 position이 잡혀
 	.exploreBanner {
 		width : 100%;
 		height : 140px;
-		background : url(../images/exploreBanner.png) no-repeat center / cover;
+		background : url(./images/exploreBanner.png) no-repeat center / cover;
 		position: relative;
 	}
 	.exploreBanner a {
@@ -689,7 +689,7 @@ position이 안 잡혀있으면 z-index가 안 됨! 그래서 position이 잡혀
 	.adBanner {
 		clear : both;
 		height : 100px;
-		background : url(../images/adBannerM.png) no-repeat center / cover;
+		background : url(./images/adBannerM.png) no-repeat center / cover;
 		cursor : pointer;
 		position: relative;
 	}
