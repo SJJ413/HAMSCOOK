@@ -1,0 +1,96 @@
+.pageTitle {
+	text-align : center;
+	margin-bottom : 12px;
+	font-family : "Kadwa-Bold";
+	font-size : 30px;
+	margin-top : 72px;
+	color : #000;
+}
+#search {
+    display: block;
+    text-align: center;
+    position: relative;
+    left: 14px;
+}
+#search input {
+	display : inline-block;
+	width : 480px;
+	height : 36px;
+	margin-bottom : 6px;
+	padding-left : 12px;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+	outline : none;
+}
+#search input::placeholder {
+	color : #aaa;
+}
+#search img {
+    position: relative;
+    top: 8px;
+    left: -36px;
+    cursor: pointer;
+}
+#rankList {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    position: relative;
+    left: 50%;
+    margin-left: -240px;
+}
+#rankList ul {
+    float: left;
+    width: 120px;
+}
+#rankList li {
+    width: 120px;
+    height: 36px;
+    font-family: 'Inter-Medium';
+    font-size: 16px;
+    line-height: 36px;
+}
+#rankList li.sort {
+    height: 48px;
+    line-height: 48px;
+    font-family: 'Inter-Bold';
+    background-color: #FDF6EC;
+}
+#rankList .place .sort {
+    border-top-left-radius: 10px;
+}
+#rankList .goal .sort {
+    border-top-right-radius: 10px;
+}
+.listPage {
+    clear: both;
+	text-align : center;
+	display : block;
+	width : 175px;
+	height : 30px;
+	margin : 0 auto 72px;
+    padding-top: 36px;
+}
+.listPage img {
+	float : left;
+	cursor : pointer;
+}
+.listPage ul {
+	float : left;
+	margin : 0 12px;
+}
+.listPage img:last-child {
+	float : right;
+}
+.listPage li {
+	display : inline-block;
+}
+.listPage a {
+	font-family : "Inter-Medium";
+	font-size : 16px;
+	line-height : 30px;
+	padding : 0 3px;
+}
+.listPage li:last-child a {
+	padding-right : 0;
+}

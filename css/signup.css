@@ -1,0 +1,138 @@
+#signupPage {
+	text-align : center;
+	margin : 240px 0;
+	height : 380px;
+}
+#signupPage h1 {
+	font-family : "Kadwa-Bold";
+	font-size : 36px;
+	margin : 3px 0;
+}
+.signupWrap {
+	width : 360px;
+	margin : 0 auto;
+}
+input {
+	display : inline-block;
+	width : 360px;
+	height : 36px;
+	margin-bottom : 6px;
+	padding-left : 12px;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+	outline : none;
+}
+input::placeholder {
+	color : #aaa;
+}
+.verifyBtn, .signupBtn {
+	display : block;
+	background-color : #E3816C;
+	color : #fff;
+	font-family : "Inter-Medium";
+	font-size : 16px;
+	width : 360px;
+	height : 48px;
+	line-height : 48px;
+	border-radius : 3px;
+	margin-bottom : 6px;
+}
+.verifyBtn {
+	background-color : #F8BA97;
+}
+.signupWrap span {
+	font-family : "Inter-Bold";
+	font-style : italic;
+	font-size : 12px;
+	line-height: 18px;
+	color : #f00;
+	text-align : left;
+	width : 360px;
+	height : 18px;
+	margin-bottom : 6px;
+	display : none;
+}
+.signupHelps {
+	float : right;
+}
+.signupHelps p a {
+	font-family : "Inter-Medium";
+	font-style : italic;
+	font-size : 12px;
+	line-height: 18px;
+	color : #000;
+}
+.signupHelps p a:hover {
+	color : #F8BA97;
+}
+
+/* 모바일 반응형웹 */
+@media all and (max-width: 480px) {
+	#signupPage {
+		text-align : center;
+		margin : 150px 0;
+		height : 380px;
+	}
+	#signupPage h1 {
+		font-family : "Kadwa-Bold";
+		font-size : 36px;
+		margin : 3px 0;
+	}
+	.signupWrap {
+		width : 360px;
+		margin : 0 auto;
+	}
+	input {
+		display : inline-block;
+		width : 360px;
+		height : 40px;
+		margin-bottom : 6px;
+		padding-left : 12px;
+		border : 1px solid #aaa;
+		border-radius : 3px;
+		outline : none;
+	}
+	input::placeholder {
+		color : #aaa;
+	}
+	.verifyBtn, .signupBtn {
+		display : block;
+		background-color : #E3816C;
+		color : #fff;
+		font-family : "Inter-Medium";
+		font-size : 16px;
+		width : 360px;
+		height : 48px;
+		line-height : 48px;
+		border-radius : 3px;
+		margin-bottom : 6px;
+	}
+	.verifyBtn {
+		background-color : #F8BA97;
+	}
+	.signupWrap span {
+		font-family : "Inter-Bold";
+		font-style : italic;
+		font-size : 12px;
+		line-height: 18px;
+		color : #f00;
+		text-align : left;
+		width : 360px;
+		height : 18px;
+		margin-bottom : 6px;
+		display : none;
+	}
+	.signupHelps {
+		float : right;
+	}
+	.signupHelps p a {
+		font-family : "Inter-Medium";
+		font-style : italic;
+		font-size : 12px;
+		line-height: 18px;
+		color : #000;
+	}
+	.signupHelps p a:hover {
+		color : #F8BA97;
+	}
+}

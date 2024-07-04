@@ -1,0 +1,63 @@
+.wrap {
+	width : 1200px;
+	margin : 0 auto;
+}
+#article {
+	height : 1000px;
+	margin-bottom : 72px;
+}
+.pageTitle {
+	text-align : left;
+	margin-bottom : 12px;
+	font-family : "Kadwa-Bold";
+	font-size : 24px;
+	margin-top : 72px;
+	color : #000;
+}
+.articleImage {
+	width : 1200px;
+	height: 500px;
+	background : url(../images/news1.png) no-repeat center / cover;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+}
+.articleTitle {
+	display : block;
+	width : 1120px;
+	height : 100px;
+	padding-top : 6px;
+}
+.title {
+	font-family : "Inter-Bold";
+	font-size : 30px;
+	margin-bottom : 3px;
+	float : left;
+	margin-top : 6px;
+}
+.date {
+	clear : both;
+	width : 150px;
+	font-family : "Inter-Medium";
+	font-size : 16px;
+	padding-top : 3px;
+}
+.share {
+	float : right;
+	width : 45px;
+	height : 45px;
+	position : relative;
+	top : 12px;
+	background : url(../images/share.png) no-repeat center;
+	cursor : pointer;
+}
+.articleBody {
+	margin-top : 30px;
+	margin-bottom : 72px;
+}
+.paragraph {
+	clear : both;
+	font-family : "Inter-Regular";
+	font-size : 14px;
+	line-height : 24px;
+	margin-bottom : 16px;
+}

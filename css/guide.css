@@ -1,0 +1,54 @@
+#article {
+	height : 720px;
+	margin-bottom : 72px;
+}
+.pageTitle {
+	text-align : center;
+	margin-bottom : 12px;
+	font-family : "Kadwa-Bold";
+	font-size : 30px;
+	margin-top : 72px;
+	color : #000;
+}
+.articleImage {
+	width : 800px;
+	height: 333px;
+	background : url(../images/guide.png) no-repeat center / cover;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+	text-align: center;
+	margin: 0 auto;
+}
+.articleTitle {
+	display : block;
+	width : 100%;
+	padding-top : 6px;
+}
+.title {
+	font-family : "Inter-Bold";
+	font-size : 24px;
+	margin-bottom : 3px;
+	margin-top : 6px;
+	margin-bottom: 18px;
+	text-align : center;
+}
+.articleBody {
+	width : 800px;
+	margin: 0 auto;
+	background-color : #eee;
+	border-radius: 20px;
+	padding : 24px 48px;
+}
+.articleBody ol {
+    list-style: decimal;
+	margin-left : 18px;
+}
+.articleBody ol li {
+	font-family : "Inter-Regular";
+	font-size : 14px;
+	line-height : 24px;
+	margin-bottom : 12px;
+}
+.articleBody ol li:last-child {
+	margin-bottom : 0;
+}

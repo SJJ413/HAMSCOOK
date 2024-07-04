@@ -1,0 +1,701 @@
+/* 구분선 */
+em.line {
+	float : left;
+	display : block;
+	width : 100%;
+	height : 1px;
+	background-color : #bbb;
+}
+em.lineM {
+	display : none;
+}
+/* 메인 비디오 영역 */
+.mainVideo {
+	width : 100%;
+	height : 420px;
+	position : relative;
+}
+.mainVideoContent {
+	width : 100%;
+	height : 420px;
+	object-fit: cover;
+}
+.mainVideo > .wrap {
+	position : relative;
+	bottom: 80px;
+	height : 80px;
+}
+.mainVideo span {
+	position : absolute;
+	bottom : 0;
+	right: 0;
+	cursor : pointer;
+}
+/* 노티스 영역 */
+.notice {
+	width : 360px;
+	height : 250px;
+	background-color : #fff;
+	float : left;
+	position : relative;
+}
+.notice section > ul {
+	background-color : #fff;
+	position : absolute;
+	top : 50px;
+	left : 0;
+	padding : 6px 12px;
+}
+.notice img {
+	border: 1px solid #aaa;
+	border-radius: 3px;
+}
+.notice section h4 a {
+	font-family : "Kadwa-Bold";
+	font-size : 18px;
+	float : left;
+	color : #bbb;
+	display : inline-block;
+	margin-right : 8px;
+	margin-top : 18px;
+}
+.notice section:first-child h4 a {
+	margin-left : 12px;
+}
+.notice section h4 a:hover {
+	color : #aaa;
+}
+/*
+position이 안 잡혀있으면 z-index가 안 됨! 그래서 position이 잡혀있는 ul에 z-index를 부여해야 함
+*/
+.notice section.active h4 a {
+	color : #000;
+}
+.notice section.disabled h4 a {
+	color : #bbb;
+}
+.notice img {
+	width : 326px;
+}
+.subtitle {
+	width : 326px;
+	padding-top : 3px;
+}
+.subtitle li {
+	display : inline-block;
+	vertical-align : bottom;
+	height : 18px;
+	font-family : "Inter-Medium";
+	font-size : 14px;
+	color : #000;
+}
+.subtitle li:first-child {
+	width : 220px;
+	white-space : nowrap;
+	overflow : hidden;
+	text-overflow : ellipsis;
+}
+.subtitle li:nth-child(2) {
+	width : 10px;
+	font-size : 12px;
+	position : relative; 
+	top : 2px;
+	text-align : center;
+	color : #bbb;
+}
+.subtitle li:last-child {
+	width : 86px;
+	text-align : right;
+}
+.more {
+	display : block;
+	background : url(../images/more.png) no-repeat;
+	background-size : 20px;
+	width : 20px;
+	height : 20px;
+	white-space : nowrap;
+	text-indent : -9999px;
+	overflow : hidden;
+	position : absolute;
+	top : -23px;
+	right : 10px;
+	cursor : pointer;
+}
+/* 커뮤니티 영역 */
+.community {
+	width : 360px;
+	height : 250px;
+	background-color : #fff;
+	float : left;
+	position : relative;
+}
+.community section > ul {
+	background-color : #fff;
+	padding : 6px 12px;
+	box-sizing : border-box;
+	position : absolute;
+	top : 50px;
+	left : 0;
+}
+.community .subtitle {
+	padding : 8px 0;
+}
+.community h4 a {
+	font-family : "Kadwa-Bold";
+	font-size : 18px;
+	float : left;
+	color : #bbb;
+	display : inline-block;
+	margin-right : 8px;
+	margin-top : 18px;
+}
+.community section:first-child h4 a {
+	margin-left : 12px;
+}
+.community h4 a:hover {
+	color : #aaa;
+}
+.community section.active h4 a {
+	color : #000;
+}
+.community section.disabled h4 a {
+	color : #bbb;
+}
+
+
+
+/* 
+.notice와 .community에서, section:target이 동시다발적으로 존재할 수 없는 문제 발생. 왼쪽 탭에서 Events를 눌러서 z-index를 활성화시켜도. 그 후에 오른쪽 탭을 조작하면 왼쪽 탭의 :target이 해제되어 News ul이 맨 위로 올라다.
+*/
+
+
+
+/* 샵 영역 */
+.shop {
+	float : right;
+	width : 480px;
+	height : 250px;
+	background-color : #0A0030;
+	position : relative;
+}
+.shop img {
+	border: 1px solid #000;
+	border-radius: 3px;
+}
+.shop a {
+	text-decoration : none;
+	color : #fff;
+}
+.shop h4 a {
+	display : inline-block;
+	font-family : "Kadwa-Bold";
+	font-size : 18px;
+	/* 
+	inline 요소는 마진이 적용되지 않는 경우가 많아서, 마진을 적용하려면 inlinie-block 요소로 만들어주는 것이 안전함
+	*/
+	margin-top : 18px;
+}
+.shop h4:first-child a {
+	margin-left : 18px;
+}
+.shop > ul {
+	width : 480px;
+	height : 250px;
+	padding : 6px 18px;
+	box-sizing : border-box;
+	position : absolute;
+	top : 50px;
+	left : 0;
+}
+.shop > ul > li {
+	display : inline-block;
+	width : 160px;
+	float: left;
+}
+.shop > ul > li:first-child {
+	margin-right : 10px;
+}
+.shop > ul > li:nth-child(3), .shop > ul > li:nth-child(4) {
+	width : 75px;
+	margin-left : 10px;
+}
+.shop > ul > li:nth-child(3) {
+	margin-bottom : 10px;
+}
+.shop img {
+	width : 100%;
+}
+.shopmore {
+	display : block;
+	width : 30px;
+	height : 80px;
+	background : url(../images/shopmore.png) no-repeat center;
+	background-size : 30px;
+	width : 30px;
+	height : 80px;
+	white-space : nowrap;
+	text-indent : -9999px;
+	overflow : hidden;
+	position : absolute;
+	top : 95px;
+	right : 10px;
+	cursor : pointer;
+}
+.shopmore:hover {
+	opacity : 0.8;
+}
+/* 익스플로어 배너 영역 */
+.exploreBanner {
+	float : left;
+	width : 500px;
+	height : 250px;
+	background : url(../images/exploreBanner.png) no-repeat center / cover;
+}
+.exploreBanner a {
+	font-family : "Kadwa-Regular";
+	color : #fff;
+	font-size : 30px;
+	line-height : 250px;
+	text-align : center;
+	display : block;
+}
+/* 랭크 영역 */
+.rank {
+	float : left;
+	width : 700px;
+	height : 250px;
+	background-color : #fff;
+	position : relative;
+}
+.rank > div:not(:last-child) {
+	display : inline-block;
+	vertical-align : bottom;
+	position : relative;
+	top : 50%;
+	left : 94px;
+	margin-top : -50px;
+	margin-right : 3px;
+}
+.rank > div:nth-child(3) {
+	margin-right : 0;
+}
+.rank2 h4, .rank3 h4 {
+	font-family : "Kadwa-Bold";
+	color : #fff;
+	font-size : 20px;
+	background-color : #DBDEE0;
+	border-radius : 30px;
+	text-align : center;
+	width : 116px;
+	position : absolute;
+	top : -16px;
+	left : 50%;
+	margin-left : -58px;
+}
+.rank3 h4 {
+	background-color : #C0A38E;
+}
+.rank1 h4 {
+	font-family : "Kadwa-Bold";
+	color : #fff;
+	font-size : 24px;
+	background-color : #FDC942;
+	border-radius : 30px;
+	text-align : center;
+	width : 140px;
+	position : absolute;
+	top : -24px;
+	left : 50%;
+	margin-left : -70px;
+}
+.rank2 h5, .rank3 h5 {
+	font-family : "Inter-Bold";
+	color : #000;
+	font-size : 20px;
+	text-align : center;
+	line-height : 32px;
+}
+.rank2 p, .rank3 p {
+	font-family : "Inter-Medium";
+	color : #000;
+	font-size : 16px;
+	width : 100px;
+	line-height : 22px;
+	margin : 0 auto;
+}
+.rank2 span, .rank3 span {
+	float : right;
+}
+.rank1 h5 {
+	font-family : "Inter-Bold";
+	color : #000;
+	font-size : 22px;
+	text-align : center;
+	line-height : 36px;
+}
+.rank1 p {
+	font-family : "Inter-Medium";
+	color : #000;
+	font-size : 18px;
+	width : 115px;
+	line-height : 24px;
+	margin : 0 auto;
+}
+.rank1 span {
+	float : right;
+}
+.rankContent {
+	background-color : #fff;
+	border : 1px solid #bbb;
+	border-radius : 10px;
+	padding : 30px 24px 12px;
+	box-shadow : 0 3px 6px 1px rgba(0, 0, 0, 0.25);
+}
+.rank1 > .rankContent {
+	padding : 30px 30px 12px;
+}
+.rank .more {
+	position : absolute;
+	top : 24px;
+	right : 30px;
+}
+/* 광고 배너 영역 */
+.adBanner {
+	clear : both;
+	height : 120px;
+	background : url(../images/adBanner.png) no-repeat center / cover;
+	cursor : pointer;
+	position: relative;
+}
+.adBanner span {
+	position: absolute;
+	top : 3px;
+	left : 3px;
+}
+
+/* 모바일 반응형웹 */
+@media all and (max-width: 480px) {
+	/* 구분선 */
+	em.line {
+		display : none;
+	}
+	em.lineM {
+		float : left;
+		display : block;
+		width : 100%;
+		height : 1px;
+		background-color : #bbb;
+		margin : 20px 0;
+	}
+	/* 메인 비디오 영역 */
+	.mainVideo {
+		width : 100%;
+		height : 240px;
+		position : relative;
+	}
+	.mainVideo > .wrap {
+		position : relative;
+		bottom : 80px;
+		height : 80px;
+	}
+	.mainVideoContent {
+		width : 100%;
+		height : 240px;
+		object-fit : cover;
+	}
+	.mainVideo span {
+		position : absolute;
+		right : 12px;
+		bottom : 0;
+		cursor : pointer;
+	}
+	/* 모바일 메뉴 영역 */
+	.menuM {
+		display : block;
+		width : 100%;
+		height : 40px;
+		background-color: #0A0030;
+	}
+	.menuM > span {
+		display: block;
+		width : 100%;
+		height : 30px;
+	}
+	.menuM > span > img {
+		display: block;
+		width : 64px;
+		height : 30px;
+		margin: 0 auto;
+		padding-top : 6px;
+		cursor: pointer;
+	}
+	.menuM ul {
+		width : 360px;
+		margin : 0 auto;
+	}
+	.menuM ul li {
+		float : left;
+	}
+	.menuM a {
+		display : block;
+		width : 120px;
+		height : 50px;
+		line-height : 50px;
+		text-align: center;
+		font-family: 'Kadwa-Bold';
+		font-size: 14px;
+		color : #fff;
+		background-color:#0A0030;
+	}
+	/* 노티스 영역 */
+	.notice {
+		display: block;
+		width : 100%;
+		height : 250px;
+		margin: 0 auto;
+		background-color : #fff;
+	}
+	.notice section > ul {
+		background-color : #fff;
+		position : absolute;
+		top : 40px;
+		left : 0;
+		padding : 6px 20px;
+	}
+	.notice section h4 a {
+		font-family : "Kadwa-Bold";
+		font-size : 18px;
+		float : left;
+		color : #bbb;
+		display : inline-block;
+		margin-right : 8px;
+		margin-top : 10px;
+	}
+	.notice section:first-child h4 a {
+		margin-left : 20px;
+	}
+	.notice section h4 a:hover {
+		color : #aaa;
+	}
+	.notice section.active h4 a {
+		color : #000;
+	}
+	.notice section.disabled h4 a {
+		color : #bbb;
+	}
+	.notice img {
+		width : 100%;
+		height: 194px;
+		border: 1px solid #aaa;
+		border-radius: 3px;
+		object-fit: cover;
+	}
+	.subtitle {
+		width : 100%;
+		padding-top : 3px;
+	}
+	.subtitle li {
+		display : inline-block;
+		vertical-align : bottom;
+		height : 18px;
+		font-family : "Inter-Medium";
+		font-size : 14px;
+		color : #000;
+	}
+	.subtitle li:first-child {
+		width : 70%;
+		white-space : nowrap;
+		overflow : hidden;
+		text-overflow : ellipsis;
+	}
+	.subtitle li:nth-child(2) {
+		width : 2.5%;
+		font-size : 12px;
+		position : relative; 
+		top : 2px;
+		text-align : center;
+		color : #bbb;
+	}
+	.subtitle li:last-child {
+		width : 25%;
+		text-align : right;
+	}
+	.more {
+		display : block;
+		background : url(../images/more.png) no-repeat;
+		background-size : 20px;
+		width : 20px;
+		height : 20px;
+		white-space : nowrap;
+		text-indent : -9999px;
+		overflow : hidden;
+		position : absolute;
+		top : -23px;
+		right : 20px;
+		cursor : pointer;
+	}
+	/* 커뮤니티 영역 */
+	.community {
+		width : 100%;
+		height : 250px;
+		background-color : #fff;
+		position : relative;
+	}
+	.community section > ul {
+		background-color : #fff;
+		padding : 6px 20px;
+		box-sizing : border-box;
+		position : absolute;
+		top : 40px;
+		left : 0;
+	}
+	.community .subtitle {
+		padding : 8px 0;
+	}
+	.community h4 a {
+		font-family : "Kadwa-Bold";
+		font-size : 18px;
+		float : left;
+		color : #bbb;
+		display : inline-block;
+		margin-right : 8px;
+		margin-top : 10px;
+	}
+	.community section:first-child h4 a {
+		margin-left : 20px;
+	}
+	.community h4 a:hover {
+		color : #aaa;
+	}
+	.community section.active h4 a {
+		color : #000;
+	}
+	.community section.disabled h4 a {
+		color : #bbb;
+	}
+	/* 샵 영역 */
+	.shop {
+		width : 100%;
+		height : 190px;
+		background-color : #0A0030;
+		position: relative;
+	}
+	.shop img {
+	border: 1px solid #000;
+	border-radius: 3px;
+	}
+	.shop a {
+		text-decoration : none;
+		color : #fff;
+	}
+	.shop h4 a {
+		display : inline-block;
+		font-family : "Kadwa-Bold";
+		font-size : 18px;
+		margin-top : 10px;
+	}
+	.shop h4:first-child a {
+		margin-left : 20px;
+	}
+	.shop > ul {
+		width : 100%;
+		height : 110px;
+		box-sizing : border-box;
+		position : absolute;
+		top : 45px;
+		left : 0;
+	}
+	.shop > ul > li {
+		width : 22%;
+		float: left;
+		margin-right: 4%;
+	}
+	.shop > ul > li:nth-child(3), .shop > ul > li:nth-child(4) {
+		width : 22%;
+		margin-left : 0;
+	}
+	.shop > ul > li:first-child {
+		margin-right : 4%;
+	}
+	.shop > ul > li:nth-child(4) {
+		margin-right: 0;
+	}
+	.shop > ul > li:nth-child(3) {
+		margin-bottom : 0;
+	}
+	.shopmore {
+		display : block;
+		width : 80px;
+		height : 30px;
+		background : url(../images/shopmoreM.png) no-repeat center;
+		background-size : 70px;
+		white-space : nowrap;
+		text-indent : -9999px;
+		overflow : hidden;
+		position : absolute;
+		top: 145px;
+		left : 50%;
+		margin-left : -40px;
+		cursor : pointer;
+	}
+	.shopmore:hover {
+		opacity : 0.8;
+	}
+	/* 익스플로어 배너 영역 */
+	.exploreBanner {
+		width : 100%;
+		height : 140px;
+		background : url(../images/exploreBanner.png) no-repeat center / cover;
+		position: relative;
+	}
+	.exploreBanner a {
+		font-family : "Kadwa-Regular";
+		color : #fff;
+		font-size : 24px;
+		line-height : 140px;
+		text-align : center;
+		display : block;
+	}
+	/* 순서 재배치 */
+	#contents1 {
+		position: relative;
+		top: 140px;
+	}
+	#contents1 .shop {
+		position: relative;
+		top: -541px;
+	}
+	#contents1 .notice {
+		position: relative;
+		top: 195px;
+	}
+	#contents1 em.lineM {
+		position: relative;
+		top : 210px;
+	}
+	#contents1 .community {
+		position: relative;
+		top: 200px;
+	}
+	#contents2 {
+		position: relative;
+		top: -731px;
+	}
+	/* 랭크 영역 */
+	.rank {
+		display: none;
+	}
+	/* 광고 배너 영역 */
+	.adBanner {
+		clear : both;
+		height : 100px;
+		background : url(../images/adBannerM.png) no-repeat center / cover;
+		cursor : pointer;
+		position: relative;
+	}
+	.adBanner span {
+		position: absolute;
+		top : 3px;
+		left : 3px;
+	}
+}

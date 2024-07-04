@@ -1,0 +1,161 @@
+.pageTitle {
+	text-align : center;
+	margin-bottom : 12px;
+	margin-top : 72px;
+}
+.pageTitle li {
+	display : inline-block;
+}
+.pageTitle li:after {
+	content : "|";
+	position : relative;
+	top : -2px;
+	left : 3px;
+	padding : 0 6px;
+	color : #bbb;
+}
+.pageTitle li:last-child:after {
+	content : "";
+}
+.pageTitle a {
+	font-family : "Kadwa-Bold";
+	font-size : 30px;
+	margin-top : 72px;
+	color : #bbb;
+}
+.pageTitle li:first-child a {
+	color : #000;
+}
+#upper {
+    display: block;
+    width: 700px;
+    height: 38px;
+    position: relative;
+    left: 50%;
+    margin-left: -350px;
+}
+#search {
+    float: left;
+    margin-left: 12px;
+}
+#search input {
+	display : inline-block;
+	width : 480px;
+	height : 36px;
+	margin-bottom : 6px;
+	padding-left : 12px;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+	outline : none;
+}
+#search input::placeholder {
+	color : #aaa;
+}
+#search img {
+    position: relative;
+    top: 8px;
+    left: -36px;
+    cursor: pointer;
+}
+.writeBtn {
+	float : right;
+	background-color : #E3816C;
+	color : #fff;
+	font-family : "Inter-Medium";
+	font-size : 16px;
+	width : 180px;
+	height : 38px;
+	line-height : 38px;
+	border-radius : 3px;
+    text-align: center;
+    position: relative;
+    right: 12px;
+    cursor: pointer;
+}
+#postList {
+    clear: both;
+    display: block;
+    text-align: center;
+    width: 970px;
+    height: 590px;
+    margin: 24px auto 0;
+}
+#postList ul {
+    float: left;
+    width: 120px;
+}
+#postList li {
+    width: 120px;
+    height: 36px;
+    font-family: 'Inter-Medium';
+    font-size: 14px;
+    line-height: 36px;
+}
+#postList ul.postTitle, #postList ul.postTitle li {
+    width: 450px;
+}
+#postList ul.postNumber, #postList ul.postNumber li {
+    width: 100px;
+}
+#postList ul.postView, #postList ul.postView li {
+    width: 60px;
+}
+#postList ul.postLike, #postList ul.postLike li {
+    width: 60px;
+}
+#postList ul.postComment, #postList ul.postComment li {
+    width: 60px;
+}
+#postList ul.postTitle li:not(:first-child) {
+    text-align: left;
+}
+#postList img {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top: 6px;
+}
+#postList li.sort {
+    height: 48px;
+    line-height: 48px;
+    font-family: 'Inter-Bold';
+    font-size: 16px;
+    background-color: #FDF6EC;
+}
+#postList .postNumber .sort {
+    border-top-left-radius: 10px;
+}
+#postList .postComment .sort {
+    border-top-right-radius: 10px;
+}
+.listPage {
+    clear: both;
+	text-align : center;
+	display : block;
+	width : 175px;
+	height : 30px;
+	margin : 24px auto 72px;
+}
+.listPage img {
+	float : left;
+	cursor : pointer;
+}
+.listPage ul {
+	float : left;
+	margin : 0 12px;
+}
+.listPage img:last-child {
+	float : right;
+}
+.listPage li {
+	display : inline-block;
+}
+.listPage a {
+	font-family : "Inter-Medium";
+	font-size : 16px;
+	line-height : 30px;
+	padding : 0 3px;
+}
+.listPage li:last-child a {
+	padding-right : 0;
+}

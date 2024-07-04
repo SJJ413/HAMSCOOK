@@ -1,0 +1,134 @@
+/* 구분선 */
+em.line {
+	float : left;
+	display : block;
+	width : 100%;
+	height : 1px;
+	background-color : #bbb;
+    margin: 30px 0;
+}
+.wrap {
+	width : 1200px;
+	margin : 0 auto;
+}
+.faqpageTitle {
+	text-align : center;
+	margin-bottom : 12px;
+	font-family : "Kadwa-Bold";
+	font-size : 30px;
+	margin-top : 72px;
+	color : #000;
+}
+#faq {
+    width: 800px;
+    height: 120px;
+    margin: 0 auto;
+}
+.faqList {
+    height: 30px;
+}
+.category {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-style: none;
+    font-family: 'Inter-Bold';
+    line-height: 30px;
+    float: left;
+    cursor: pointer;
+}
+.question {
+    width : 650px;
+    font-family: 'Inter-Regular';
+    line-height: 30px;
+    float: right;
+    cursor: pointer;
+}
+.reportpageTitle {
+	text-align : center;
+	margin-bottom : 12px;
+	font-family : "Kadwa-Bold";
+	font-size : 30px;
+	color : #000;
+}
+#report {
+    width: 800px;
+    height: 550px;
+    margin: 0 auto 72px;
+}
+input, textarea{
+	display : inline-block;
+	height : 36px;
+	margin-bottom : 6px;
+	padding-left : 12px;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+	outline : none;
+    resize: none;
+}
+input.reportTitle {
+    width: 518px;
+    float: left;
+}
+input.reportEmail {
+    width: 270px;
+    float: right;
+}
+textarea.reportBody {
+    width: 800px;
+    height: 400px;
+    clear: both;
+    padding-top: 8px;
+}
+input::placeholder, textarea::placeholder {
+	color : #aaa;
+    font-family: 'Inter-Regular';
+    font-size: 14px;
+}
+.reportImageOut, .reportImageIn {
+    display: block;
+    height: 30px;
+    margin-bottom: 6px;
+}
+.reportImageIn img {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 0 3px 12px;
+    position: relative;
+    top: 3px;
+}
+.reportImageOut span, .reportImageIn span {
+    line-height: 30px;
+}
+.reportImageOut span {
+    color: #aaa;
+    text-decoration: underline;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.reportImageIn em {
+    font-style: normal;
+    color: #aaa;
+    text-decoration: underline;
+    margin-left: 12px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.reportImageIn {
+    display: none;
+}
+.sendBtn {
+    clear: both;
+	display : block;
+	background-color : #E3816C;
+	color : #fff;
+	font-family : "Inter-Medium";
+	font-size : 16px;
+	width : 800px;
+	height : 48px;
+	line-height : 48px;
+	border-radius : 3px;
+	margin-bottom : 6px;
+    text-align: center;
+}

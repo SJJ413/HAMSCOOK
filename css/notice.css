@@ -1,0 +1,131 @@
+.wrap {
+	width : 1200px;
+	margin : 0 auto;
+}
+.pageTitle {
+	text-align : center;
+	margin-bottom : 30px;
+	margin-top : 72px;
+}
+.pageTitle li {
+	display : inline-block;
+}
+.pageTitle li:after {
+	content : "|";
+	position : relative;
+	top : -2px;
+	left : 3px;
+	padding : 0 6px;
+	color : #bbb;
+}
+.pageTitle li:last-child:after {
+	content : "";
+}
+.pageTitle a {
+	font-family : "Kadwa-Bold";
+	font-size : 30px;
+	margin-top : 72px;
+	color : #bbb;
+}
+.pageTitle li:first-child a {
+	color : #000;
+}
+.noticeList {
+	height : 1392px;
+}
+.noticeList a div:first-child {
+	float : left;
+	width : 540px;
+	height : 240px;
+}
+.noticeList a {
+	display : block;
+	height : 240px;
+	margin-bottom : 48px;
+}
+.noticeList a:hover {
+	opacity : 0.5;
+}
+.noticeThumbnail1 {
+	background : url(../images/notice1.png) no-repeat center / cover;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+}
+.noticeThumbnail2 {
+	background : url(../images/notice2.png) no-repeat center / cover;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+}
+.noticeThumbnail3 {
+	background : url(../images/notice3.png) no-repeat center / cover;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+}
+.noticeThumbnail4 {
+	background : url(../images/notice4.png) no-repeat center / cover;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+}
+.noticeThumbnail5 {
+	background : url(../images/notice5.png) no-repeat center / cover;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+}
+.noticePreview {
+	float : right;
+	width : 630px;
+	height : 240px;
+}
+.noticePreview .title {
+	font-family : "Inter-Bold";
+	font-size : 20px;
+	margin-bottom : 3px;
+}
+.noticePreview span {
+	font-family : "Inter-Regular";
+	font-size : 14px;
+}
+.noticePreview p {
+	font-family : "Inter-Regular";
+	font-size : 14px;
+	line-height : 20px;
+	margin-top : 12px;
+	width : 630px;
+	height : 184px;
+	overflow : hidden;
+	text-overflow : ellipsis;
+	display : -webkit-box;
+	word-wrap : break-word;
+	-webkit-line-clamp : 9;
+	-webkit-box-orient : vertical;
+}
+.listPage {
+	text-align : center;
+	display : block;
+	width : 175px;
+	height : 30px;
+	margin : 36px auto 72px;
+}
+.listPage img {
+	float : left;
+	cursor : pointer;
+}
+.listPage ul {
+	float : left;
+	margin : 0 12px;
+}
+.listPage img:last-child {
+	float : right;
+}
+.listPage li {
+	display : inline-block;
+}
+.listPage a {
+	font-family : "Inter-Medium";
+	font-size : 16px;
+	line-height : 30px;
+	padding : 0 3px;
+}
+.listPage li:last-child a {
+	padding-right : 0;
+}

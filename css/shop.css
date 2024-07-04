@@ -1,0 +1,157 @@
+.shopBanner {
+    width: 100%;
+    height: 420px;
+    background: url(../images/shopBanner.png) center / cover;
+    cursor: pointer;
+}
+#upper {
+    height: 60px;
+    background-color: #FDF6EC;
+}
+#upper > .wrap {
+    width: 600px;
+}
+.search {
+    float: left;
+    margin-top: 9px; 
+}
+.search input {
+	display : inline-block;
+	width : 480px;
+	height : 36px;
+	margin-bottom : 6px;
+	padding-left : 12px;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+	outline : none;
+}
+.search input::placeholder {
+	color : #aaa;
+}
+.search img {
+    position: relative;
+    top: 8px;
+    left: -36px;
+    cursor: pointer;
+}
+.shopBtns {
+    float: right;
+    position: relative;
+    right: 12px;
+    margin-top: 9px; 
+}
+.shopBtns img {
+    margin-left: 3px;
+    cursor: pointer;
+}
+#filter {
+    width: 100%;
+    height: 36px;
+    background-color: #F8BA97;
+}
+#filter ul {
+    position: relative;
+    left: 50%;
+    margin-left: -300px;
+    padding-top: 6px;
+}
+#filter li {
+    float: left;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-family: 'Kadwa-Bold';
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    color: #000;
+    margin: 0 2px;
+}
+#filter li:hover {
+    background-color: #FDF6EC;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2); 
+    color: #E3816C;
+}
+#filter li.active {
+    background-color: #fff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+    color: #E3816C;
+}
+#productList {
+    margin-top: 72px;
+}
+#productList > .wrap {
+    width: 800px;
+}
+.productCard {
+    width: 360px;
+    height: 460px;
+    float: left;
+}
+.productCard:nth-child(2n) {
+    margin-left: 80px;
+}
+.productCard:nth-child(n+3) {
+    margin-top: 48px;
+}
+.productCard > a > img {
+    width: 360px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+.productCard p {
+    font-family: 'Inter-Bold';
+    font-size: 24px;
+    display: block;
+    margin-top: 6px;
+}
+.productCard span {
+    font-family: 'Inter-Medium';
+    font-size: 18px;
+    display: block;
+    margin-top: 3px;
+}
+.productBtns {
+    text-align: right;
+}
+.productBtns img {
+    width: 36px;
+    height: 36px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.listPage {
+    clear: both;
+	text-align : center;
+	display : block;
+	width : 175px;
+	height : 30px;
+	margin : 48px auto 72px;
+}
+.listPage img {
+	float : left;
+	cursor : pointer;
+}
+.listPage ul {
+	float : left;
+	margin : 0 12px;
+}
+.listPage img:last-child {
+	float : right;
+}
+.listPage li {
+	display : inline-block;
+}
+.listPage a {
+	font-family : "Inter-Medium";
+	font-size : 16px;
+	line-height : 30px;
+	padding : 0 3px;
+}
+.listPage li:last-child a {
+	padding-right : 0;
+}

@@ -1,0 +1,128 @@
+#loginPage {
+	text-align : center;
+	margin : 300px 0;
+	height : 200px;
+}
+#loginPage h1 {
+	font-family : "Kadwa-Bold";
+	font-size : 36px;
+	margin : 3px 0;
+}
+.loginWrap {
+	width : 360px;
+	margin : 0 auto;
+}
+.inputs {
+	float : left;
+}
+.inputs input {
+	display : inline-block;
+	width : 270px;
+	height : 36px;
+	margin-bottom : 6px;
+	padding-left : 12px;
+	border : 1px solid #aaa;
+	border-radius : 3px;
+	outline : none;
+}
+.inputs input::placeholder {
+	color : #aaa;
+}
+.loginBtn {
+	float : right;
+	background-color : #E3816C;
+	color : #fff;
+	font-family : "Inter-Medium";
+	font-size : 16px;
+	width : 80px;
+	height : 78px;
+	line-height : 78px;
+	border-radius : 3px;
+}
+.loginHelps {
+	float : left;
+	text-align : left;
+}
+.loginHelps span {
+	font-family : "Inter-Bold";
+	font-style : italic;
+	font-size : 12px;
+	line-height: 18px;
+	color : #f00;
+	display : none;
+}
+.loginHelps p a {
+	font-family : "Inter-Medium";
+	font-style : italic;
+	font-size : 12px;
+	line-height: 18px;
+	color : #000;
+}
+.loginHelps p a:hover {
+	color : #F8BA97;
+}
+
+/* 모바일 반응형웹 */
+@media all and (max-width: 480px) {
+	#loginPage {
+		text-align : center;
+		margin : 150px 0;
+		height : 280px;
+	}
+	#loginPage h1 {
+		font-family : "Kadwa-Bold";
+		font-size : 36px;
+		margin : 3px 0;
+	}
+	.loginWrap {
+		width : 360px;
+		margin : 0 auto;
+	}
+	.inputs input {
+		display : inline-block;
+		width : 360px;
+		height : 40px;
+		margin-bottom : 6px;
+		padding-left : 12px;
+		border : 1px solid #aaa;
+		border-radius : 3px;
+		outline : none;
+	}
+	.inputs input::placeholder {
+		color : #aaa;
+	}
+	.loginBtn {
+		float : left;
+		background-color : #E3816C;
+		color : #fff;
+		font-family : "Inter-Medium";
+		font-size : 16px;
+		width : 360px;
+		height : 48px;
+		line-height : 48px;
+		border-radius : 3px;
+	}
+	.loginHelps {
+		clear : both;
+		text-align : left;
+		margin-top : 6px;
+	}
+	.loginHelps span {
+		font-family : "Inter-Bold";
+		font-style : italic;
+		font-size : 12px;
+		line-height: 18px;
+		color : #f00;
+		display : none;
+	}
+	.loginHelps p a {
+		font-family : "Inter-Medium";
+		font-style : italic;
+		font-size : 12px;
+		line-height: 18px;
+		color : #000;
+	}
+	.loginHelps p a:hover {
+		color : #F8BA97;
+	}
+}

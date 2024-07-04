@@ -1,0 +1,80 @@
+.wrap {
+	width : 1200px;
+	margin : 0 auto;
+}
+#completePage {
+	text-align : center;
+	margin : 180px 0;
+	height : 410px;
+}
+#completePage img {
+	width : 240px;
+	height : 240px;
+	margin-bottom: 18px;
+}
+#completePage h1 {
+	font-family : "Kadwa-Bold";
+	font-size : 36px;
+	margin-top : -30px;
+}
+.btnWrap {
+	width : 360px;
+	margin : 0 auto;
+}
+.btn1, .btn2 {
+	display : block;
+	background-color : #E3816C;
+	color : #fff;
+	font-family : "Inter-Medium";
+	font-size : 16px;
+	width : 360px;
+	height : 48px;
+	line-height : 48px;
+	border-radius : 3px;
+	margin-bottom : 6px;
+}
+.btn1 {
+	background-color : #F8BA97;
+}
+
+/* 모바일 반응형웹 */
+@media all and (max-width: 480px) {
+	.wrap {
+		width : 100%;
+		margin : 0 auto;
+	}
+	#completePage {
+		text-align : center;
+		margin : 120px 0;
+		height : 360px;
+	}
+	#completePage img {
+		width : 180px;
+		height : 180px;
+		margin-bottom: 18px;
+	}
+	#completePage h1 {
+		font-family : "Kadwa-Bold";
+		font-size : 30px;
+		margin-top : -30px;
+	}
+	.btnWrap {
+		width : 360px;
+		margin : 0 auto;
+	}
+	.btn1, .btn2 {
+		display : block;
+		background-color : #E3816C;
+		color : #fff;
+		font-family : "Inter-Medium";
+		font-size : 16px;
+		width : 360px;
+		height : 48px;
+		line-height : 48px;
+		border-radius : 3px;
+		margin-bottom : 6px;
+	}
+	.btn1 {
+		background-color : #F8BA97;
+	}
+}

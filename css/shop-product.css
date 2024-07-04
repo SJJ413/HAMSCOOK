@@ -1,0 +1,44 @@
+#productPage {
+    width: 800px;
+    margin: 72px auto;
+}
+#productPage > img {
+    width: 800px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+#productPage > p {
+    display: block;
+    font-family: 'Inter-Bold';
+    font-size: 36px;
+    margin-top: 6px;
+}
+#productPage > span {
+    display: block;
+    font-family: 'Inter-Medium';
+    font-size: 24px;
+    margin-top: 6px;
+}
+.productBtns {
+    text-align: right;
+    margin-top: 6px;
+}
+.productBtns img {
+    margin-left: 3px;
+    cursor: pointer;
+}
+.productBody {
+    margin-top: 24px;
+}
+.paragraph {
+	font-family : "Inter-Regular";
+	font-size : 14px;
+	line-height : 24px;
+	margin-bottom : 16px;
+}
+.productBody img {
+    width: 800px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 6px 0;
+}

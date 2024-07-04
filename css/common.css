@@ -1,0 +1,298 @@
+* {
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+}
+body {
+	background-color : #fff;
+	font-family : "Inter-Regular";
+	font-size : 14px;
+	color : #000;
+}
+ul {
+	list-style : none;
+}
+a {
+	text-decoration : none;
+	color : #000;
+}
+/* 
+	스타일 메모 
+		Deep Blue = #0A0030
+		Red = #E3816C
+		Cream = #FDF6EC
+		Orange = #F8BA97
+		Gold = #FDC942
+		Silver = #DBDEE0
+		Bronze = #C0A38E
+		Gray 2(텍스트, 구분선) = #BBBBBB
+		Gray 3(텍스트 호버, 검색창, 인풋, 글작성도구, SNS버튼, 이미지테두리) = #AAAAAA
+		로그인/아웃 버튼 radius = 4px
+		로그인/아웃 버튼 padding = 3px 16px
+*/
+
+/* 폰트 설정 */
+@font-face {
+    font-family : 'Inter-Regular';
+    font-weight : 400;
+    src : url('font/Inter-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family : 'Inter-Medium';
+    font-weight : 500;
+    src : url('font/Inter-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family : 'Inter-Bold';
+    font-weight : 600;
+    src : url('font/Inter-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family : 'Kadwa-Regular';
+    font-weight : 700;
+    src : url('font/Kadwa-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family : 'Kadwa-Bold';
+    font-weight : 800;
+    src : url('font/Kadwa-Bold.ttf') format('truetype');
+}
+/* 전체 레이아웃 */
+.wrap {
+	width : 1200px; 
+	margin : 0 auto;
+	overflow: hidden;
+}
+/* 헤더 영역 */
+header > .wrap {
+	position : relative;
+	height : 70px;
+}
+header {
+	background-color : #0A0030;
+	height : 70px;
+}
+header img {
+	width : 160px;
+	position : absolute;
+	top : 20px;
+	left : 0;
+}
+header ul {
+	position : absolute;
+	top : 16px;
+	left : 250px;
+}
+header ul li {
+	display : inline-block;
+	padding-left : 20px;
+}
+header ul li:first-child {
+	padding-left : 0;
+}
+header a {
+	font-family : "Kadwa-Bold";
+	font-size : 18px;
+	text-decoration : none;
+	color : #fff;
+}
+header ul li a:hover {
+	opacity : 0.8;
+}
+.menuM {
+	display : none;
+}
+.login {
+	display : inline-block;
+	background-color : #E3816C;
+	border-radius : 4px;
+	padding : 3px 16px;
+	position : absolute;
+	top : 15px;
+	right : 0;
+}
+/* 푸터 영역 */
+footer {
+	background-color : #000;
+	height : 240px;
+	color : #bbb;
+}
+footer > .wrap {
+	position : relative;
+}
+.footerLeft {
+	float : left;
+	width : 30%;
+}
+.footerLeft img {
+	width : 160px;
+	margin-top : 30px;
+	margin-bottom : 10px;
+}
+.footerLeft p {
+	padding : 3px 0;
+}
+.footerCenterTop {
+	float : left;
+	width : 50%;
+	height : 40px;
+	padding-top : 30px;
+	text-align : center;
+}
+.footerCenterTop a p {
+	display : inline-block;
+	margin-right : 30px;
+	color : #bbb;
+}
+.footerCenterTop a p:hover {
+	color : #fff;
+}
+.footerCenterBottom {
+	float : left;
+	width : 50%;
+	height : 120px;
+	padding-top : 30px;
+	text-align : center;
+}
+.footerCenterBottom a p {
+	display : inline-block;
+	margin-right : 30px;
+	text-align : center;
+	padding-bottom : 6px;
+	color : #bbb;
+}
+.footerCenterBottom a p:hover {
+	color : #fff;
+}
+.footerRight {
+	position : absolute;
+	top : 0;
+	right : 0;
+	width : 20%;
+}
+.footerRight img {
+	float : right;
+	margin-top : 25px;
+	margin-left : 6px;
+}
+.footerRight img:hover {
+	filter : brightness(9999%);
+}
+
+
+
+/* 모바일 반응형웹 */
+@media all and (max-width: 480px) {
+	/* 전체 레이아웃 */
+	.wrap {
+		width : 100%; 
+		margin : 0 auto;
+		overflow: hidden;
+	}
+
+	/* 헤더 영역 */
+	header > .wrap {
+		position : relative;
+		height : 100px;
+	}
+	header {
+		background-color : #0A0030;
+		height : 100px;
+	}
+	header img {
+		width : 85px;
+		position : absolute;
+		top : 60px;
+		left : 30px;
+	}
+	header ul {
+		display : none;
+	}
+	header a {
+		font-family : "Kadwa-Bold";
+		font-size : 14px;
+		text-decoration : none;
+		color : #fff;
+	}
+	.login {
+		display : inline-block;
+		background-color : #E3816C;
+		border-radius : 4px;
+		padding : 3px 16px;
+		position : absolute;
+		top : 50px;
+		right : 20px;
+	}
+	
+	/* 푸터 영역 */
+	footer {
+		background-color : #000;
+		height : 300px;
+		color : #bbb;
+	}
+	footer > .wrap {
+		position : relative;
+	}
+	.footerLeft {
+		float : left;
+		width : 240px;
+	}
+	.footerLeft img {
+		width : 85px;
+		margin-top : 30px;
+		margin-left : 20px;
+		margin-bottom : 10px;
+	}
+	.footerLeft p {
+		padding : 3px 0;
+		font-size : 10px;
+		margin-left : 20px;
+	}
+	.footerCenterTop {
+		clear : both;
+		width : 100%;
+		height : 40px;
+		padding-top : 30px;
+		text-align : center;
+	}
+	.footerCenterTop a p {
+		display : inline-block;
+		margin-right : 10px;
+		color : #bbb;
+		font-size : 10px;
+	}
+	.footerCenterTop a p:hover {
+		color : #fff;
+	}
+	.footerCenterBottom {
+		clear : both;
+		width : 100%;
+		height : 120px;
+		padding-top : 30px;
+		text-align : center;
+		margin-left : 20px;
+	}
+	.footerCenterBottom a p {
+		padding : 6px 0;
+		color : #bbb;
+		font-size : 10px;
+	}
+	.footerCenterBottom a p:hover {
+		color : #fff;
+	}
+	.footerRight {
+		position : absolute;
+		top : 0;
+		right : 20px;
+		width : 100px;
+	}
+	.footerRight img {
+		float : right;
+		margin-top : 25px;
+		margin-left : 6px;
+		width : 24px;
+	}
+	.footerRight img:hover {
+		filter : brightness(9999%);
+	}
+}
